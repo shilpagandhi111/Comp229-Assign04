@@ -11,7 +11,9 @@ namespace Comp229_Assign04
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+           
+            repeater1.DataSource = Global.models;
+            repeater1.DataBind();
         }
     }
 }
