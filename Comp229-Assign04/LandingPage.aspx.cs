@@ -22,28 +22,44 @@ namespace Comp229_Assign04
        
         protected void SendMessage_Click(object sender, EventArgs e)
         {
-
+            Global.Email(NameText.Text,emailText.Text,MessageText.Text );
+            emailText.Text = "";
+            NameText.Text = "";
+            MessageText.Text = "";
+            Response.Redirect("LandingPage.aspx");
+        }
+        public static void Email(string EmailAddress, string Name, string MessageText)
+        {
             SmtpClient smtpClient = new SmtpClient("smtp-mail.outlook.com", 587);
+            smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
+
             MailMessage message = new MailMessage();
             try
             {
                 MailAddress fromAddress = new MailAddress("cc-comp229f2016@outlook.com", "Comp229-Assign04");
-                MailAddress toAddress = new MailAddress("shilpagandhi111@gmail.com", "To You");
+                MailAddress toAddress = new MailAddress(EmailAddress,Name,MessageText);
                 message.From = fromAddress;
                 message.To.Add(toAddress);
-                message.Subject = "testing Assign04";
-                message.Body = " body";
+                message.Subject = "Comp229-Assign04 email";
+                message.Body = MessageText;
+
                 smtpClient.Host = "smtp-mail.outlook.com";
-                smtpClient.Credentials = new System.Net.NetworkCredential("cc-comp229f2016@outlook.com", "Comp229pwd");
+                smtpClient.EnableSsl = true;
+                smtpClient.UseDefaultCredentials = false;
+                smtpClient.Credentials = new System.Net.NetworkCredential("cc-comp229f2016@outlook.com", "comp229pwd");
+
+               
+                message.Attachments.Add(new Attachment(System.Web.Hosting.HostingEnvironment.MapPath(@"C:\Users\shilp\Documents\Visual Studio 2015\Projects\Comp229-Assign04\Comp229-Assign04\Models\Assign04(1)Copy.json"), contentType));
+
                 smtpClient.Send(message);
+               
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+               
             }
+
+
+
         }
-
-      
-
-    }
 }

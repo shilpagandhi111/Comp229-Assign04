@@ -18,9 +18,14 @@
    </div>
     <div  class="text-center "style="background-color: #D2B48C">
         Contact Us: 
+        <br />
         <asp:Label ID="Name" runat="server" Text="Name:"> </asp:Label>
         <br />
         <asp:TextBox ID="NameText" runat="server"></asp:TextBox>
+        <br />
+        <asp:Label ID="Label1" runat="server" Text="email"></asp:Label>
+        <br />
+        <asp:TextBox ID="emailText" runat="server"></asp:TextBox>
         <br />
 
          <asp:Label ID="Message" runat="server" Text="Message:"> </asp:Label>

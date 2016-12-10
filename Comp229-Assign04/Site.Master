@@ -49,8 +49,8 @@
                 <div class="navbar-collapse collapse md-col-4" >
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="LandingPage.aspx">Home</a></li>
-                        <li><a runat="server"href="Model.aspx">Model</a></li>
-                        <li><a runat="server"href="About.aspx">about</a></li>
+                        <li><a runat="server" href="Model.aspx">Model</a></li>
+                        <li><a runat="server" href="About.aspx">about</a></li>
                     </ul>
                     
                 </div>

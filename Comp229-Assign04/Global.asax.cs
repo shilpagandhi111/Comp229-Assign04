@@ -21,7 +21,13 @@ namespace Comp229_Assign04
             DisplayData();
             
         }
-          private void DisplayData()
+
+        internal static void Email(string text1, string text2, string text3)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void DisplayData()
         {
             using (StreamReader sr = new StreamReader(Server.MapPath("~/Models/Assign04(1).json")))
             {

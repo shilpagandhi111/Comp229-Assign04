@@ -47,18 +47,22 @@ namespace Comp229_Assign04
             }
         protected void Button1_Click(object sender, EventArgs e)
         {
-           
-            dataModel.name = nameTextBox.Text;
-            dataModel.faction = factionTextBox.Text;
-            dataModel.rank = Convert.ToInt32(rankTextBox.Text);
-            dataModel._base = Convert.ToInt32(baseTextBox.Text);
-            dataModel.size = Convert.ToInt32(sizeTextBox.Text.Remove(sizeTextBox.Text.Length - 2, 2));
-            dataModel.mobility = Convert.ToInt32(mobilityTextBox.Text);
-            dataModel.willpower = Convert.ToInt32(willpowerTextBox.Text);
-            dataModel.resiliance = Convert.ToInt32(resilianceTextBox.Text);
-            dataModel.wounds = Convert.ToInt32(woundsTextBox.Text);
+            try
+            {
+                dataModel.name = nameTextBox.Text;
+                dataModel.faction = factionTextBox.Text;
+                dataModel.rank = Convert.ToInt32(rankTextBox.Text);
+                dataModel._base = Convert.ToInt32(baseTextBox.Text);
+                dataModel.size = Convert.ToInt32(sizeTextBox.Text);
+                dataModel.mobility = Convert.ToInt32(mobilityTextBox.Text);
+                dataModel.willpower = Convert.ToInt32(willpowerTextBox.Text);
+                dataModel.resiliance = Convert.ToInt32(resilianceTextBox.Text);
+                dataModel.wounds = Convert.ToInt32(woundsTextBox.Text);
 
-            createNewJSON();
+                createNewJSON();
+                Response.Redirect("LandingPage.aspx");
+            }
+           
         }
 
         private void createNewJSON()
