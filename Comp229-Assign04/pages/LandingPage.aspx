@@ -4,6 +4,8 @@
 
     <div class="jumbotron">
         
+        <asp:Image ID="Image1" runat="server" Height="83px" Width="1131px" ImageUrl="../App_Data/wrath%20of%20kings.jpg" />
+        
     </div>
 
    <div class="data">
@@ -14,7 +16,8 @@
                 </ItemTemplate>
      </asp:Repeater>
    </div>
-    <div  class="text-center">
+    <div  class="text-center "style="background-color: #D2B48C">
+        Contact Us: 
         <asp:Label ID="Name" runat="server" Text="Name:"> </asp:Label>
         <br />
         <asp:TextBox ID="NameText" runat="server"></asp:TextBox>
