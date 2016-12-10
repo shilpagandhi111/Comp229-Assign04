@@ -1,4 +1,7 @@
-﻿namespace Comp229_Assign04.Models
+﻿using System;
+using System.Collections.Generic;
+
+namespace Comp229_Assign04.Models
 {
     public class Model
     {
@@ -20,7 +23,13 @@
             public Action[] actions { get; set; }
             public Specialability[] specialAbilities { get; set; }
             public string imageUrl { get; set; }
+
+            internal static List<Comp229_Assign04.Model> ToList()
+            {
+                throw new NotImplementedException();
+            }
         }
+
 
         public class Action
         {

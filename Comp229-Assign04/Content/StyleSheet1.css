@@ -1,7 +1,6 @@
-﻿
-body {
-
+﻿body {
 }
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -14,6 +13,10 @@ ul {
  }
 li {
     float: left;
+}
+navbar navbar-fixed-top{
+    padding:14px,16px;
+    background-color:tan;
 }
 
 li a {

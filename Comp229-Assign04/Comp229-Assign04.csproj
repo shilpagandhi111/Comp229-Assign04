@@ -154,7 +154,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
+    <Content Include="pages\About.aspx" />
     <Content Include="Account\AddPhoneNumber.aspx" />
     <Content Include="Account\Confirm.aspx" />
     <Content Include="Account\Forgot.aspx" />
@@ -178,7 +178,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
+    <Content Include="pages\Model.aspx" />
     <Content Include="Models\Assign04%281%29.json" />
+    <Content Include="Models\Assign04%281%29Copy.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -209,18 +211,18 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="LandingPage.aspx" />
+    <Content Include="pages\LandingPage.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
-    <Content Include="StyleSheet1.css" />
+    <Content Include="Content\StyleSheet1.css" />
+    <Content Include="pages\UpdatePage.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Site.Mobile.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -335,22 +337,29 @@
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
+    <Compile Include="pages\About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="About.aspx.designer.cs">
+    <Compile Include="pages\About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="pages\Model.aspx.cs">
+      <DependentUpon>Model.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\Model.aspx.designer.cs">
+      <DependentUpon>Model.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Models\Model.cs" />
-    <Compile Include="LandingPage.aspx.cs">
+    <Compile Include="pages\LandingPage.aspx.cs">
       <DependentUpon>LandingPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="LandingPage.aspx.designer.cs">
+    <Compile Include="pages\LandingPage.aspx.designer.cs">
       <DependentUpon>LandingPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
@@ -365,14 +374,14 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
-    <Compile Include="Site.Mobile.Master.cs">
-      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    <Compile Include="Startup.cs" />
+    <Compile Include="pages\UpdatePage.aspx.cs">
+      <DependentUpon>UpdatePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Site.Mobile.Master.designer.cs">
-      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    <Compile Include="pages\UpdatePage.aspx.designer.cs">
+      <DependentUpon>UpdatePage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Startup.cs" />
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
