@@ -16,7 +16,8 @@ namespace Comp229_Assign04
             string Name = Request.QueryString["name"];
             string Faction = Request.QueryString["faction"];
 
-            try {
+            try
+            {
                 if (!Name.Equals("") && !Faction.Equals(""))
                 {
                     dataModel = Global.models.FirstOrDefault(tModel => tModel.name == Name && tModel.faction == Faction);
@@ -35,7 +36,7 @@ namespace Comp229_Assign04
         }
         private void DisplayData()
         {
-            
+
             nameLabel.Text = dataModel.name;
             factionLabel.Text = dataModel.faction;
             rankLabel.Text = dataModel.rank.ToString();
@@ -63,9 +64,10 @@ namespace Comp229_Assign04
             modelImg.ImageUrl = dataModel.imageUrl;
             actionsRepeater.DataBind();
 
-            Update.PostBackUrl = "~/Update.aspx?name=" + dataModel.name + "&faction=" + dataModel.faction;
+            Update.PostBackUrl = "~/UpdatePage.aspx?name=" + dataModel.name + "&faction=" + dataModel.faction;
         }
+      
 
-        
     }
+       
 }

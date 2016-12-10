@@ -43,20 +43,7 @@ namespace Comp229_Assign04
             }
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            string Name = Request.QueryString["name"];
-            string Faction = Request.QueryString["faction"];
-            try {
-                Model modelDelete = Global.models.FirstOrDefault(tModel => tModel.name == Name && tModel.faction == Faction);
-                Global.deleteCharacter(modelDelete);
-                Response.Redirect("Default.aspx");
-            }
-            catch
-            {
-                Response.Redirect("Default.aspx");
-            }
-            }
+      
 
     }
 }

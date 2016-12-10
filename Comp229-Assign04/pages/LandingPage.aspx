@@ -13,7 +13,6 @@
                     <br />
                 </ItemTemplate>
      </asp:Repeater>
-        <asp:Button ID="Button1" runat="server" Text="Delete Player" OnClick="Button1_Click" />
    </div>
     <div  class="text-center">
         <asp:Label ID="Name" runat="server" Text="Name:"> </asp:Label>

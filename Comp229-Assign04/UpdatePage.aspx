@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="UpdatePage.aspx.cs" Inherits="Comp229_Assign04.UpdatePage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-
-    <div class="col-xs-12 col-md-4">
+      <div class="col-xs-12 col-md-4">
         <asp:Image runat="server" ID="modelImg" Width="200px" />
 
     </div>
@@ -170,10 +169,11 @@
         </table>
 
         
-        <div style="clear:both"></div>
+        <div style="clear:both">
+            <asp:Button ID="Button1" runat="server" Text="update" OnClick="Button1_Click" />
+        </div>
 
     </div>
     
-
-
 </asp:Content>
+

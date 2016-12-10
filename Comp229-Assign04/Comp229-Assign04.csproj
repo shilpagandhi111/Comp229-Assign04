@@ -216,7 +216,7 @@
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
     <Content Include="Content\StyleSheet1.css" />
-    <Content Include="pages\UpdatePage.aspx" />
+    <Content Include="UpdatePage.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -375,11 +375,11 @@
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
-    <Compile Include="pages\UpdatePage.aspx.cs">
+    <Compile Include="UpdatePage.aspx.cs">
       <DependentUpon>UpdatePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pages\UpdatePage.aspx.designer.cs">
+    <Compile Include="UpdatePage.aspx.designer.cs">
       <DependentUpon>UpdatePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">

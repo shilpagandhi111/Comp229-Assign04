@@ -29,8 +29,14 @@ namespace Comp229_Assign04
                 models = JsonConvert.DeserializeObject<List<Models.Model.modelsData>>(sr.ReadToEnd());
             }
         }
-     
-
-       
+        public static void UpdateNewJsonFile()
+        {
+            using (StreamWriter streamWriter = File.CreateText(System.Web.Hosting.HostingEnvironment.MapPath("~/Models/Assign04(1)Copy.json")))
+            {
+                streamWriter.WriteLine(JsonConvert.SerializeObject(models));
+            }
         }
+
+
+    }
 }
