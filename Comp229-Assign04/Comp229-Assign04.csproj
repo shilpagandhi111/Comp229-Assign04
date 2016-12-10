@@ -155,7 +155,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\wrath of kings.jpg" />
-    <Content Include="pages\About.aspx" />
+    <Content Include="About.aspx" />
     <Content Include="Account\AddPhoneNumber.aspx" />
     <Content Include="Account\Confirm.aspx" />
     <Content Include="Account\Forgot.aspx" />
@@ -179,7 +179,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
-    <Content Include="pages\Model.aspx" />
+    <Content Include="Model.aspx" />
     <Content Include="Models\Assign04%281%29.json" />
     <Content Include="Models\Assign04%281%29Copy.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -212,7 +212,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="pages\LandingPage.aspx" />
+    <Content Include="LandingPage.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
@@ -338,29 +338,29 @@
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="pages\About.aspx.cs">
+    <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pages\About.aspx.designer.cs">
+    <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="pages\Model.aspx.cs">
+    <Compile Include="Model.aspx.cs">
       <DependentUpon>Model.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pages\Model.aspx.designer.cs">
+    <Compile Include="Model.aspx.designer.cs">
       <DependentUpon>Model.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\Model.cs" />
-    <Compile Include="pages\LandingPage.aspx.cs">
+    <Compile Include="LandingPage.aspx.cs">
       <DependentUpon>LandingPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="pages\LandingPage.aspx.designer.cs">
+    <Compile Include="LandingPage.aspx.designer.cs">
       <DependentUpon>LandingPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">

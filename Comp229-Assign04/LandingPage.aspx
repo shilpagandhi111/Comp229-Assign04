@@ -4,7 +4,7 @@
 
     <div class="jumbotron">
         
-        <asp:Image ID="Image1" runat="server" Height="83px" Width="1131px" ImageUrl="../App_Data/wrath%20of%20kings.jpg" />
+        <asp:Image ID="Image1" runat="server" Height="83px" Width="1094px" ImageUrl="../App_Data/wrath%20of%20kings.jpg" />
         
     </div>
 

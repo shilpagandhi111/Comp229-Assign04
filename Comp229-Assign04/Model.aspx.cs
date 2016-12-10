@@ -25,7 +25,7 @@ namespace Comp229_Assign04
                 }
                 else
                 {
-                    Response.Redirect("Default.aspx");
+                    Response.Redirect("LandingPage.aspx");
                 }
             }
 

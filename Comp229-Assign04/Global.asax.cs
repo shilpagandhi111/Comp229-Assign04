@@ -12,8 +12,7 @@ namespace Comp229_Assign04
     public class Global : HttpApplication
     {
         public static List<Models.Model.modelsData> models;
-        public static List<Models.Model.Action> Actionmodels;
-        public static List<Models.Model.Specialability> Specialmodels;
+        private const string updatedJsonFilePath = @"C:\Users\shilp\Documents\Visual Studio 2015\Projects\Comp229-Assign04\Comp229-Assign04\Models\Assign04(1)Copy.json";
         void Application_Start(object sender, EventArgs e)
         {
             // Code that runs on application startup
