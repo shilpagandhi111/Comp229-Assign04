@@ -3,9 +3,8 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="jumbotron">
-        
-        <asp:Image ID="Image1" runat="server" Height="83px" Width="1094px" ImageUrl="../App_Data/wrath%20of%20kings.jpg" />
-        
+        <img src="App_Data/wrath%20of%20kings.jpg" style="width: 1139px; height: 258px" />
+       
     </div>
 
    <div class="data">

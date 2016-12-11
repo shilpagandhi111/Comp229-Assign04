@@ -47,8 +47,7 @@ namespace Comp229_Assign04
             }
         protected void Button1_Click(object sender, EventArgs e)
         {
-            try
-            {
+           
                 dataModel.name = nameTextBox.Text;
                 dataModel.faction = factionTextBox.Text;
                 dataModel.rank = Convert.ToInt32(rankTextBox.Text);
@@ -61,7 +60,8 @@ namespace Comp229_Assign04
 
                 createNewJSON();
                 Response.Redirect("LandingPage.aspx");
-            }
+            
+            
            
         }
 
